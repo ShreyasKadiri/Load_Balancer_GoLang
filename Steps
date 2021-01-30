@@ -1,0 +1,9 @@
+Approach
+1. We build 5 HTTP servers each of which returns the name when mocked 
+2. We build the load balancer 
+3. Load balancer will route the requests to HTTP servers, as the HTTP servers will respond back 
+with name we will know which server actually got triggered 
+4. We will use Round robin for routing purposes 
+5. From Golang (load balancer) we want to redirect to python server 
+6. We create a reverse proxy  that is like one to many servers 
+ 
